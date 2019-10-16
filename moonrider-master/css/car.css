@@ -1,0 +1,420 @@
+/*Navbar */
+.bar{
+	background-color: rgba(0,0,0,.55) !important ;
+	width: 100%;
+}
+.fixed-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+/*head carousel*/
+.carousel {
+	max-height: 755px;
+	overflow: hidden;
+	width: auto;
+	.item img {
+		width: 100%;
+		height: auto;
+
+	}
+}
+.carousel-inner > .carousel-item > img {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-width: 500px;
+	height:auto;
+	min-height: 500px;
+	
+}
+.mylayer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: #000000;
+	opacity: 0.5;
+}
+.header-text {
+	position: absolute;
+	top: 33%;
+	width: 100%;
+	z-index: 3;
+	min-width: 400px;
+}
+.carousel-item img{
+	height: 100%;
+	width:100%;
+}
+
+.header-text h1{
+	z-index: 3;
+	font-size: 6em;
+	color:white;
+}
+.header-text h3{
+	z-index: 3;
+	font-size: 1.5em;
+	color: white;
+}
+
+
+
+
+/*icon styling*/
+
+.iconfb , .iconyb{
+	color: #D8D8D8;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+    text-align: center;
+    font-size: 21px !important;
+    line-height: 2.4 !important;
+    transition: background-color 1.5s ease !important;
+    transition: color 1.5s ease !important;
+}
+.iconfb:hover{
+  	color: white;
+  	background-color: #3b5998;
+  }
+  .iconyb:hover{
+  	color: white;
+  	background-color: #F70000;
+  }
+.hide{
+	opacity: 0;
+}
+
+
+/*About us content*/
+.about1{
+	padding-top:70px;
+	width: 55%;
+	float: left;
+	padding-left: 50px;
+}
+.border1{
+	border-bottom: 1px solid #16648D;
+	width: 35%;
+	margin: 0 auto;
+	height: 10px;
+}
+
+.box2{
+	padding-top: 100px;
+	margin-bottom: 500px;
+}
+
+.sidebox{
+	padding-top: 40px;
+	float: right;
+	padding-right: 50px;
+}
+.sidebox img{
+	width:330px;
+	height:auto;
+}
+/*facebook posts div*/
+.box{ 
+	height:350px;
+	width:350px;
+	overflow:auto;
+}
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.box, img{
+	-webkit-transition: 8s;
+	-moz-transition: 8s;
+	transition: 8s;     
+	
+	-webkit-transition-timing-function: linear;
+	-moz-transition-timing-function: linear;
+
+	transition-timing-function: linear;
+}
+
+
+
+.box:hover img{
+	margin-top: -500px;
+
+}
+
+/*gallery*/
+.border2{
+	border-bottom: 1px solid white;
+	width: 35%;
+	margin: 0 auto;
+	height: 10px;
+}
+.back{
+	background-color: #F7F7F7;
+}
+.card{
+	border:none !important;
+}
+/*gallery zoom*/
+/* Styles the lightbox, removes it from sight and adds the fade-in transition */
+
+.lightbox-target {
+	position: fixed;
+	z-index: 3;
+	top: -100%;
+	background: rgba(0,0,0,.7);
+	width: 100%;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+	overflow: hidden;
+}
+/*image styling gallery*/
+.lightbox img{
+	width: 100%;
+	height: auto;
+}
+
+/*gallery zoom image styling*/
+#pg1 img{ 
+	width: 70%;
+	height: auto;
+}
+#pg2 img{ 
+	width: auto;
+	height: 90%;
+}
+#pg3 img{ 
+	width: 80%;
+	height: auto;
+}
+#pg4 img{ 
+	width: auto;
+	height: 90%;
+}
+#pg5 img{ 
+	width: 70%;
+	height: auto;
+}
+#pg6 img{ 
+	width: 60%;
+	height: auto;
+}
+#pg7 img{ 
+	width: 60%;
+	height: auto;
+}
+#pg8 img{ 
+	width: 70%;
+	height: auto;
+}
+#pg9 img{ 
+	width: 70%;
+	height: auto;
+}
+
+
+
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
+
+.lightbox-target img {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom: 0;
+	max-height: 0%;
+	max-width: 0%;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+/* Provides part of the "X" to eliminate an image from the close link */
+
+.lightbox-target:target {
+	opacity: 1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.lightbox-target:target img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+	top: 0px;
+}
+/*Some data content*/
+.icon1{
+	color: #CCCBCB;
+	height: 40px;
+	width: 40px;	
+	text-align: center;
+	font-size: 47px !important;
+
+}
+.col{
+	border-right: 1px solid #ABABAB;
+}
+.data{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #104868;
+}
+.col h3{
+	color: #CCCBCB;
+}
+.col h5{
+	color: #CCCBCB;
+}
+/*data content ends*/
+
+
+@media screen and (max-width: 996px){
+	.icon1{
+		font-size: 35px !important;
+	}
+	.col h3{
+		font-size: 2em;
+	}
+	.col h5{
+		font-size: 1em;
+	}
+	div.about1{
+		padding-left: 0px;
+		float: none;
+		width: 100%;
+	}
+
+	div.sidebox h4{
+		text-align: center;
+		padding-right: 0%;
+		padding-left: 0%;
+	}
+	div.box{
+		padding-right: 0px;
+	}
+	div.sidebox{
+		justify-content: center;
+		width: 100%;
+		padding-right: 30%;
+		padding-left: 30%;
+	}
+
+}
+@media screen and (max-width: 796px) {
+	.icon1{
+		font-size: 25px !important;
+	}
+	.col h3{
+		font-size: 1em;
+	}
+	.col h5{
+		font-size: 0.5em;
+	}
+
+
+	div.header-text h1{
+		font-size: 3.5em;
+		text-align: center;
+	}
+	div.header-text h3{
+		font-size: 1.2em;
+		justify-content: center;
+	}
+	div.about1{
+		text-align: center;
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 30px;
+	}
+	div.sidebox{
+		padding-right: 15%;
+		padding-left: 15%;
+	}
+	p.lead{
+		font-size: 1em;
+	}
+	div.sidebox h4{
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 2em;
+		width: 100%;
+	}
+	div.box {
+		padding-right: 0px;
+		width: 100%;
+		height: 250px;
+	}
+	div.box img{
+		width: 100%;
+	}
+	div.box2 	{
+		padding-top: 10px;
+	}
+	div.box2 h1{
+		font-size: 3em;
+
+	}
+	#t1 h1{
+		font-size: 3em;
+	}
+	#gallery h1{
+		font-size: 3em;
+	}
+	div.carousel-item img{
+		height: 50%;
+	}
+	div.navbar-expand-lg{
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+	}
+	.modal-content {
+		width: 100%;
+	}
+	
+}
+@media screen and (max-width: 500px){
+	.navbar img{
+		width: 180px !important;
+	}
+	div.header-text h1{
+		font-size: 2.5em;
+		text-align: center;
+	}
+	div.header-text h3{
+		font-size: 1.0em;
+		justify-content: center;
+	}
+}
+

@@ -1,0 +1,119 @@
+body{
+	background: #FFC15E !important;
+}
+.back{
+	background-color: rgba(0, 0, 0,0.2) !important;
+}
+img{
+	width: 190px;
+	height: 400px;
+}
+a i{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 30px; 
+    width: 30px;
+    line-height: 29px !important;
+}
+.button1{
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,-10%);
+}
+.button1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.button1 a:hover{
+    color: yellow;
+    text-decoration: none;
+}
+
+/*Footer*/
+.fluid footer{
+    background-color: black;
+    padding: 15px;
+    margin-top: 90px;
+    display: flex;
+}
+.fluid footer p{
+    color: lightgrey;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.fluid footer p .red{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 30px; 
+    line-height: 29px !important;
+    color: red;
+    display: inline-block ! important;
+    font-size: 15px ! important;
+}
+.footer_modal{
+    color: blue;
+}
+.imag{
+    width: 300px;
+    height: 300px;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 320px){
+	.heading{
+        font-size: 3rem !important;
+    }
+    .fluid footer p{
+        font-size: 13px !important;
+        text-align: center;
+        float: none;
+        display: inline-table;
+    }
+    .fluid footer{
+        display: block;
+        text-align: center;
+    }
+    .imag{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 528px){
+	.heading{
+        font-size: 3rem !important;
+    }
+    .fluid footer p{
+        font-size: 13px !important;
+        text-align: center;
+        float: none;
+        display: inline-table;
+    }
+    .fluid footer{
+        display: block;
+        text-align: center;
+    }
+    .imag{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 1024px){
+	.fluid footer p{
+        font-size: 17px !important;
+        text-align:center;
+        float: none;
+        display: inline-table;
+    }
+    .fluid footer{
+        display: block;
+        text-align: center;
+    }
+    p b{
+       font-size: 16px !important;
+    }
+}

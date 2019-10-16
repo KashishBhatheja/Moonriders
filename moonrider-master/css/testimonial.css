@@ -1,0 +1,117 @@
+.box5
+{	
+	background-color: #F0F0F7;
+	padding-bottom: 35px;
+	overflow: hidden;
+}
+.box6
+{
+	background-color: #92A1A6;
+	width: 90%;
+	border-radius: 15px;
+	height: 30%;
+	overflow: hidden;
+	margin-left: 11vh;
+	margin-top: 30px; 
+}
+
+.test_name
+{
+	color: white;
+	padding-top: 70px;
+	font-size: 28px;
+}
+.img
+{
+	border-radius: 30px;
+}
+.in_img
+{
+	height: 100%;
+	width: 100%;
+}
+.head_text
+{
+
+	margin-top: 8vh;
+}
+.border3{
+		border-bottom: 1px solid black;
+		width: 55%;
+		margin: 0 auto;
+		height: 5px;
+	}
+
+.message
+{
+	color: white;
+	font-size: 21px;
+	text-align: justify;
+}
+.msg_box
+{
+	padding: 20px 50px 20px 50px;
+}
+.i_quote
+{
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	div.box6
+	{
+		margin-left: 7vh; 
+	}
+	h1
+	{
+		font-size: 62px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	div.box6
+	{
+		margin-right: 4vh;
+		height: 243px;
+	}
+	div.message
+	{
+		font-size: 11px;
+	}
+	h1.head_text
+	{
+		font-size: 9vh;
+	}
+	div.message.i_tag
+	{
+		font-size: 16px;
+	}
+	div.test_name
+	{
+		font-size: 10px;
+		padding-top: 40px;
+	}
+	div.box5
+	{
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	div.box6
+	{
+		margin-left: 4vh; 
+		height: 228px;
+	}
+	h1.head_text
+	{
+		font-size: 8vh;
+	}
+	div.message
+	{
+		font-size: 12px;
+	}
+	div.test_name
+	{
+		font-size: 13px;
+		padding-top: 28px;
+	}
+}

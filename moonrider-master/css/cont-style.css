@@ -1,0 +1,226 @@
+.container{
+    max-width: 100%;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+} 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menu-toggle{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255,255,255,.5);
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu-toggle.active
+{
+    background: #f00;
+}
+.menu-toggle span
+{
+    position: absolute;
+    display: block;
+    height: 4px;
+    background: #262626;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s;
+}
+.menu-toggle span:nth-child(1)
+{
+    top: 30%;
+}
+.menu-toggle span:nth-child(3)
+{
+    top: 70%;
+}
+.menu-toggle.active span:nth-child(1)
+{
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.menu-toggle.active span:nth-child(2)
+{
+    opacity: 0;
+}
+.menu-toggle.active span:nth-child(3)
+{
+    top: 50%;
+    background: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    height: 50px;
+    transition: .5s;
+}
+nav.active{
+    right: 50px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+ nav ul li a
+{
+    display: block;
+    height: 50px; 
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+nav ul li a:hover
+{
+    background-color: rgba(246,16,16) !important;
+    text-decoration: none;
+    color: white;
+    cursor: pointer !important;
+}     
+.left {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0)), url("../images/contact-us/left-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    text-align: center
+}
+.left_con{
+    padding: 0px;
+
+}
+.h1{
+    color: white !important;
+}
+.form{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+}
+
+.cform{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.heading{
+    text-align: center;
+    padding: 130px 0px 20px;
+    font-weight: 500;
+    color: rgb(52,51,51);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.head{
+    padding-top: 40px !important;
+}
+.contact p i{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+.contact p{
+    text-align: center;
+    color: rgb(52,51,51);
+}
+.fa{
+    display: inline-block;
+}
+.icon1{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.footer{
+    display: flex;
+    background: rgba(26,27,35);
+    text-align: right;
+    width: 100%;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+.right_con{
+    padding: 10px 80px;
+    float: right;
+
+}
+.visit{
+    margin-top: 0px;
+}
+
+/*Media Query*/
+
+@media (min-width:576px) {
+.h1{
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+}
+}
+/* Medium devices (tablets) */
+@media (min-width:768px) {
+  .h1{
+    text-align: center;
+    color: red;
+}  
+
+/* Large devices (desktops) */
+@media (min-width:992px) {
+  .h1{
+    text-align: center;
+      font-size: 5.6rem;
+      color: black;
+}        
+}
+/* Extra large devices (large de*/
+@media (min-width:1200px) {
+    .h1{
+    text-align: center;
+    font-size: 6.2rem;
+    color: aqua;
+}      
+}
+/* The given screen size or smaller */
+/* Extra small devices (pphones)*/
+@media (max-width:575px) {
+    
+    .left{
+        display: none;
+    }
+    
+    .right{
+        width: 100%;
+    }
+}
+/* Small devices (landscape phones)*/
+@media (max-width:767px) {}
+/* Medium devices (tablets)*/
+@media (max-width:991px) {}
+/* Large devices (desktops)*/
+@media (max-width:1199px) {}
+
+
